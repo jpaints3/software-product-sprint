@@ -8,7 +8,36 @@
   margin-top: 20px;
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.textboxes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .socialMedia {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    float: right;
 }
+
+.socialMedia > a {
+    margin: 10px; 
+}
+
+.socialMedia > a > img{
+    width:80%;
+    height:80%;
+}
+
+
