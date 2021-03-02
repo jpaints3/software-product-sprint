@@ -7,3 +7,49 @@
 #greeting-container {
   margin-top: 20px;
 }
+
+.topBar{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pfp{
+    float: left;
+    width: 25%;
+    height: 25%;
+}
+
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.textboxes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.socialMedia {
+    float: right;
+}
+
+
+.socialMedia > a {
+    margin: 5%; 
+}
+
+.socialMedia > a > img{
+    width: 20%;
+    height: 60%;
+    margin-top: 8%;
+}
+
+
+
