@@ -8,10 +8,20 @@
   margin-top: 20px;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
+.topBar{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
 }
+
+
+.pfp{
+    float: left;
+    width: 25%;
+    height: 25%;
+}
+
 
 .intro {
     display: flex;
@@ -26,18 +36,17 @@
 }
 
 .socialMedia {
-    display: flex;
-    flex-direction: row;
     float: right;
 }
 
 .socialMedia > a {
-    margin: 10px; 
+    margin: 5%; 
 }
 
 .socialMedia > a > img{
-    width:80%;
-    height:80%;
+    width: 20%;
+    height: 60%;
+    margin-top: 8%;
 }
 
 
