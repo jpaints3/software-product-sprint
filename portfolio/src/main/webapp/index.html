@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="fetcher.js"></script>
   </head>
   <body class="body">
     <div id="content">
@@ -84,7 +85,15 @@
         </div>
 
         <div>
-          <a href= "/strservlet"><button>Run Servlet</button></a>
+            <a href= "/strservlet">
+                <button>Run Servlet</button>
+            </a>
+        </div>
+
+        <div>
+            <a id="strservletText">
+                <button onclick="strFetch();">Run Async Function: Fetch</button>
+            </a>
         </div>
     </div>
   </body>
