@@ -5,5 +5,5 @@ async function strFetch() {
   const randomIdx = Math.floor(Math.random() * servletText.length);
   const randomQuote = servletText[randomIdx]; // choose a quote from a random index
 
-  (document.getElementById('strservletText')).innerText = randomQuote; // input our text into the HTML
+  (document.getElementById('strServletText')).innerText = randomQuote; // input our text into the HTML
 }
