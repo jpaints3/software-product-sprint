@@ -1,9 +1,10 @@
 //quick fetch function 
-async function strFetch(){
-    const gson = new Gson();
-    const servletText = (await fetch('/strservlet')).text(); //get the servlet text
+async function strFetch(){  
+  const servletText = await (await fetch('/strservlet')).json(); //get the servlet text as json
 
-    const servletJSON = gson.toJSON(servletText) 
+  let randomQuote = ""
+  let randomIdx = Math.floor(Math.random() * servletText.length)
+  randomQuote = await servletText[randomIdx]; //choose a quote from a random index
 
-    (document.getElementById('strservletText')).innerText = servletText; //input our text into the HTML
+  (document.getElementById('strservletText')).innerText = randomQuote; //input our text into the HTML
 }
