@@ -4,7 +4,7 @@ async function strFetch(){
 
   let randomQuote = ""
   let randomIdx = Math.floor(Math.random() * servletText.length)
-  randomQuote = await servletText[randomIdx]; //choose a quote from a random index
+  randomQuote = servletText[randomIdx]; //choose a quote from a random index
 
   (document.getElementById('strservletText')).innerText = randomQuote; //input our text into the HTML
 }
