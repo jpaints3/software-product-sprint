@@ -8,7 +8,7 @@ import com.google.gson.Gson;
 
 
 
-@WebServlet("/strservlet")
+@WebServlet("/strServlet")
 public class StringServlet extends HttpServlet {
 
     @Override
@@ -16,22 +16,24 @@ public class StringServlet extends HttpServlet {
         response.setContentType("text/String;");
         Gson gson = new Gson();
         
-        //create a new array list and input quoataions.
+        // create a new array list and input quoataions.
         ArrayList<String> quotations = new ArrayList<String>();
 
-        quotations.add("<p>The past is not dead. In fact, it's not even past.  -William Faulkner</p>");
-        quotations.add("<p>Education is the passport to the future, for tomorrow belongs to those who prepare for it today. -Malcolm X</p>");
-        quotations.add("<p>Don't count the days, make the days count. -Muhammad Ali</p>");
+        quotations.add("The past is not dead. In fact, it's not even past.  -William Faulkner");
+        quotations.add("Education is the passport to the future," 
+                              + " for tomorrow belongs to those who prepare for it today. -Malcolm X");
+        quotations.add("Don't count the days, make the days count. -Muhammad Ali");
 
         /*
-        //print quotations 
+        // print quotations 
         for(String quote : quotations){
             response.getWriter().println(quote);
         }
         */
-
-        //return the arraylist as json
+ 
+        // return the arraylist as json
         String qJSON = gson.toJson(quotations);
+        
         response.getWriter().println(qJSON);
     }
 }
