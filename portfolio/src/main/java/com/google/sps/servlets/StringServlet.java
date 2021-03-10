@@ -21,7 +21,7 @@ public class StringServlet extends HttpServlet {
 
         quotations.add("The past is not dead. In fact, it's not even past.  -William Faulkner");
         quotations.add("Education is the passport to the future," 
-                          +" for tomorrow belongs to those who prepare for it today. -Malcolm X");
+                              + " for tomorrow belongs to those who prepare for it today. -Malcolm X");
         quotations.add("Don't count the days, make the days count. -Muhammad Ali");
 
         /*
