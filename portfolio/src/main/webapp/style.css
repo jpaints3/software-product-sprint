@@ -8,48 +8,41 @@
   margin-top: 20px;
 }
 
-.topBar{
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
+.topBar {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
 }
 
-
-.pfp{
-    float: left;
-    width: 25%;
-    height: 25%;
+.pfp {
+  float: left;
+  width: 25%;
+  height: 25%;
 }
-
 
 .intro {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.textboxes{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.textboxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
 
 .socialMedia {
-    float: right;
+  float: right;
 }
-
 
 .socialMedia > a {
-    margin: 5%; 
+  margin: 5%;
 }
 
-.socialMedia > a > img{
-    width: 20%;
-    height: 60%;
-    margin-top: 8%;
+.socialMedia > a > img {
+  width: 20%;
+  height: 60%;
+  margin-top: 8%;
 }
-
-
-
